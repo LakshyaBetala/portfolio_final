@@ -150,6 +150,7 @@ export default function Portfolio() {
       {/* Centered Social Bottom Navigation - Reordered */}
       <motion.div
         className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 flex gap-4 bg-gray-900/90 backdrop-blur-md border border-cyan-400/40 rounded-full px-8 py-4 shadow-2xl shadow-cyan-400/20"
+        style={{ transform: 'translateX(-55%)' }}
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 1, duration: 0.8 }}
@@ -233,7 +234,7 @@ export default function Portfolio() {
 
             <div className="text-2xl md:text-3xl text-gray-200 mb-12 h-20 drop-shadow-lg">
               <TypewriterText
-                texts={["ML Enthusiast 🤖", "IoT Explorer 📡", "Web Dev Adventurer 🌐", "Innovation Catalyst ⚡"]}
+                texts={["ML Enthusiast 🤖", "IoT Explorer 📡", "Web Dev Adventurer 🌐", "Innovation Catalyst ⚡","Problem solver 👍"]}
               />
             </div>
 
@@ -245,33 +246,13 @@ export default function Portfolio() {
               className="relative mx-auto mb-12 group cursor-pointer flex justify-center"
               whileHover={{ scale: 1.05 }}
             >
-              <div className="w-48 h-48 bg-gradient-to-br from-cyan-400 via-blue-500 to-purple-600 rounded-full flex items-center justify-center text-6xl border-4 border-cyan-400/50 shadow-2xl shadow-cyan-400/50 relative overflow-hidden">
-                {/* Animated background */}
-                <motion.div
-                  className="absolute inset-0 bg-gradient-to-r from-cyan-400/20 to-purple-600/20"
-                  animate={{
-                    rotate: [0, 360],
-                  }}
-                  transition={{
-                    duration: 10,
-                    repeat: Number.POSITIVE_INFINITY,
-                    ease: "linear",
-                  }}
-                />
-                <span className="relative z-10">🚀</span>
+              <div className="w-48 h-48 rounded-full flex items-center justify-center border-4 border-cyan-400/50 shadow-2xl shadow-cyan-400/50 relative overflow-hidden">
+                <img 
+                   src="https://github.com/LakshyaBetala/portfolio_final/blob/main/Screenshot%202025-05-11%20063809.png?raw=true"
+                   className="w-full h-full object-cover rounded-full"
+                   />
 
-                {/* Upload indicator */}
-                <motion.div
-                  className="absolute inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                  initial={{ scale: 0.8 }}
-                  whileHover={{ scale: 1 }}
-                >
-                  <div className="text-center">
-                    <div className="text-2xl mb-2">📸</div>
-                    <div className="text-sm text-cyan-400 font-medium">Click to upload photo</div>
-                  </div>
-                </motion.div>
-              </div>
+              
 
               {/* Floating rings */}
               <motion.div
@@ -307,7 +288,7 @@ export default function Portfolio() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.8 }}
             >
-              From game dev dreams to AI systems, I'm a curious creator at heart. Building smarter ecosystems and
+              From web dev dreams to AI systems, I'm a curious creator at heart. Building smarter ecosystems and
               turning ideas into impactful solutions.
             </motion.p>
           </div>
@@ -452,9 +433,9 @@ export default function Portfolio() {
                     Gained hands-on experience with cutting-edge technologies and industry best practices.
                   </p>
                   <div className="flex items-center gap-4">
-                    <span className="text-gray-400">2024</span>
+                    <span className="text-gray-400">2025 - feb</span>
                     <span className="px-3 py-1 bg-green-400/20 text-green-400 border border-green-400/30 rounded-full text-sm">
-                      Completed
+                      Ongoing
                     </span>
                   </div>
                 </div>
